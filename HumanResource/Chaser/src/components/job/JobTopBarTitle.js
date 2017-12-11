@@ -11,7 +11,7 @@ class JobTopBarTitle extends Component {
     render() {
         return (
             <View style={{ alignSelf: 'center', flex: 1, justifyContent: 'center', alignItems: 'center' }}>
-                <Text style={{ color: white, fontSize: fontScale(20), fontWeight: 'bold' }}>{Languages.JobContent}</Text>
+                <Text style={{ color: white, fontSize: fontScale(20), fontWeight: 'bold' }}>{Languages.JobDetail}</Text>
             </View>
         );
     }

@@ -1,5 +1,5 @@
 import React from 'react';
-import { TabNavigator, DrawerNavigator } from 'react-navigation';
+import { TabNavigator, DrawerNavigator, Text } from 'react-navigation';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 import HomeRouter from '../home/HomeRouter';
 import NotificationRouter from '../notification/NotificationRouter';
@@ -8,9 +8,9 @@ import Friend from '../friend/Friend';
 import Menu from './Menu';
 import Color from '../../content/color/Color';
 import { horizontalScale, fontScale } from '../../utillities/Scale';
+import Profile from '../profile/Profile';
 
-
-const { white, brownBlack, brownGray } = Color;
+const { white, brownBlack, brownGray, black } = Color;
 
 export const Tabs = TabNavigator({
     HomeTab: {
@@ -72,6 +72,9 @@ export const Tabs = TabNavigator({
 export const SideMenu = DrawerNavigator({
     Tabbar: {
         screen: Tabs
+    },
+    ProfileScreen: {
+        screen: Profile
     }
 }, {
         drawerPosition: 'left',

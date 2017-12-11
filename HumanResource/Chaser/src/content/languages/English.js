@@ -9,6 +9,8 @@ export default {
     JobList: 'Job List',
     JobContent: 'Job Content',
     JoinedJob: 'Joined Jobs',
-    Notification: 'Notification'
+    Notification: 'Notification',
+    MainSearch: 'Main Search',
+    Profile: 'Profile'
 };
 

@@ -11,7 +11,7 @@ import Image3 from '../../content/images/LoginBackGround3.jpg';
 import Avatar from '../../content/images/Avatar.jpg';
 import { width, height } from '../../utillities/Scale';
 
-const { white, gray2, black, gray4, blue5 } = Color;
+const { white, gray2, black, gray4, blue5, brownBlack } = Color;
 
 class Comment extends Component {
     constructor(props) {
@@ -219,11 +219,10 @@ class Comment extends Component {
         const commentRightSection = isSendText ? btnSendText : btnSendIcon;
         return (
             <View style={{ flex: 1 }}>
-                <Text style={{ display: 'none' }}>{lang}</Text>
-                {/* <StatusBar backgroundColor={'wheat'} /> */}
+                <StatusBar backgroundColor={brownBlack} barStyle="light-content" />
                 <View
                     style={{
-                        backgroundColor: black,
+                        backgroundColor: brownBlack,
                         position: 'absolute',
                         height: 50,
                         alignSelf: 'stretch',
@@ -281,7 +280,7 @@ class Comment extends Component {
                         (event) => this.setState({ commentHeight: event.nativeEvent.layout.height })
                     }
                     style={{
-                        backgroundColor: black,
+                        backgroundColor: brownBlack,
                         bottom: 0,
                         left: 0,
                         right: 0,

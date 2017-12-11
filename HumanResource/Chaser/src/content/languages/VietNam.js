@@ -7,7 +7,9 @@ export default {
     CreateAccount: 'Tạo tài khoản',
     NeedHelp: 'Cần trợ giúp?',
     JobList: 'Danh sách công việc',
-    JobContent: 'Nội dung công việc',
+    JobDetail: 'Chi tiết công việc',
     JoinedJob: 'Công việc đã tham gia',
-    Notification: 'Thông báo'
+    Notification: 'Thông báo',
+    MainSearch: 'Tìm kiếm',
+    Profile: 'Thông tin cá nhân'
 };

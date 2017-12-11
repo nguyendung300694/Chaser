@@ -11,6 +11,9 @@ import JobList from '../joblist/JobList';
 import HomeTopBarTitle from '../home/HomeTopBarTitle';
 import JobListTopBarTitle from '../joblist/JobListTopBarTitle';
 import JobTopBarTitle from '../job/JobTopBarTitle';
+import JobTopBarRight from '../job/JobTopBarRight';
+import CommentRouter from '../comment/CommentRouter';
+
 import Job from '../job/Job';
 import { Languages } from '../../content/languages/Languages';
 
@@ -67,9 +70,12 @@ const HomeRouter = StackNavigator({
                     width: 0
                 },
             },
-            headerRight: (<Text />),
+            headerRight: <JobTopBarRight color={white} />,
             headerTintColor: white
         })
+    },
+    CommentRouter: {
+        screen: CommentRouter
     }
 }, {
         initialRouteName: 'HomeScreen'

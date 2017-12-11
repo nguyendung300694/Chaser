@@ -6,15 +6,18 @@ import Color from '../../content/color/Color';
 import JoinedJobListTopBarTitle from '../joined_job_list/JoinedJobListTopBarTitle';
 import Job from '../job/Job';
 import JobTopBarTitle from '../job/JobTopBarTitle';
+import JobTopBarRight from '../job/JobTopBarRight';
 import JoinedJobList from '../joined_job_list/JoinedJobList';
+import ButtonShowMenu from '../home/ButtonShowMenu';
+
 import { Languages } from '../../content/languages/Languages';
 
-const { white, brownBlack, black } = Color;
+const { white, brownBlack, black, yellow2 } = Color;
 
 const JoinedJobListRouter = StackNavigator({
     JoinedJobListScreen: {
         screen: JoinedJobList,
-        navigationOptions: () => ({
+        navigationOptions: ({ navigation }) => ({
             headerTitle: <JoinedJobListTopBarTitle />,
             headerStyle: {
                 backgroundColor: brownBlack,
@@ -26,6 +29,8 @@ const JoinedJobListRouter = StackNavigator({
                     width: 0
                 }
             },
+            headerLeft: <ButtonShowMenu navigation={navigation} />,
+            headerRight: <Text />
         })
     },
     JobSreen: {
@@ -43,7 +48,7 @@ const JoinedJobListRouter = StackNavigator({
                     width: 0
                 },
             },
-            headerRight: (<Text />),
+            headerRight: <JobTopBarRight color={yellow2} />,
             headerTintColor: white
         })
     }

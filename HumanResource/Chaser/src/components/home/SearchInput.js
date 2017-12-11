@@ -60,6 +60,7 @@ class SearchInput extends Component {
                                 fontSize: fontScale(13),
                                 paddingVertical: 0,
                                 marginVertical: 0,
+                                paddingHorizontal: fontScale(10),
                                 flex: 1,
                                 color: white,
                                 backgroundColor: brownPurple,
@@ -71,7 +72,7 @@ class SearchInput extends Component {
                                 this.setState({ name });
                             }}
                             underlineColorAndroid='transparent'
-                            placeholder='Main Search'
+                            placeholder={Languages.MainSearch}
                             value={this.state.name}
                             selectionColor={white}
                         />
@@ -99,7 +100,7 @@ class SearchInput extends Component {
 }
 
 function mapStateToProps(state) {
-    return {};
+    return { lang: state.lang };
 }
 
 export default connect(mapStateToProps)(SearchInput);

@@ -13,7 +13,7 @@ import FaceModel from '../../content/images/FaceModel.png';
 import Sell from '../../content/images/Sell.png';
 import { width, height, fontScale, verticalScale, horizontalScale } from '../../utillities/Scale';
 
-const { white, gray2, black, gray4, blue5, whiteBlue, brownBlack } = Color;
+const { white, gray2, black, gray4, blue5, whiteBlue, brownBlack, yellow2 } = Color;
 
 class JoinedJobList extends Component {
     constructor(props) {
@@ -49,12 +49,12 @@ class JoinedJobList extends Component {
                 <TouchableOpacity style={{ alignSelf: 'flex-end', paddingTop: verticalScale(6) }}>
                     <MaterialIcons
                         size={fontScale(18)}
-                        name={'star'}
-                        style={{ color: '#FFFF00', backgroundColor: gray4, borderRadius: fontScale(9) }}
+                        name={'star-border'}
+                        style={{ color: yellow2 }}
                     />
                 </TouchableOpacity>
                 <View style={{ flex: 1, justifyContent: 'center' }}>
-                    <Text numberOfLines={1} ellipsizeMode={'tail'} style={{ color: brownBlack, fontWeight: 'bold' }}>Clean House sad sad sad sad sad asd asd sad sad sa</Text>
+                    <Text numberOfLines={1} ellipsizeMode={'tail'} style={{ color: brownBlack, fontWeight: 'bold', fontSize: fontScale(13) }}>Clean House sad sad sad sad sad asd asd sad sad sa</Text>
                     <Text numberOfLines={2} ellipsizeMode={'tail'} style={{ fontSize: fontScale(11) }}>Vim company sad asd sad  jshgad ashdg shadg sadgs agd jsagds gds gdsdg sd gsad gsadg sdg shagd shagdgas dgs hjags hdgasd gsa dgsaj asd sad sad adssadas asd sad asd sa</Text>
                 </View>
                 <TouchableOpacity style={{ alignSelf: 'flex-end', paddingBottom: verticalScale(4), paddingTop: verticalScale(6) }} onPress={() => navigate('JobSreen')}>

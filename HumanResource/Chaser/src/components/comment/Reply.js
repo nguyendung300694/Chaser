@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, Text, FlatList, Image, TouchableOpacity, TextInput, StatusBar } from 'react-native';
+import { View, Text, FlatList, Image, TouchableOpacity, TextInput } from 'react-native';
 import { connect } from 'react-redux';
 import MaterialIcons from 'react-native-vector-icons/MaterialIcons';
 

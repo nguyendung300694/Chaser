@@ -48,7 +48,7 @@ class JobList extends Component {
             <View style={{ flex: 3, paddingRight: horizontalScale(10) }}>
                 <Text numberOfLines={1} ellipsizeMode={'tail'} style={{ fontSize: 10, color: brownBlack, alignSelf: 'flex-end', paddingTop: verticalScale(6) }}>20:00</Text>
                 <View style={{ flex: 1, justifyContent: 'center' }}>
-                    <Text numberOfLines={1} ellipsizeMode={'tail'} style={{ color: brownBlack, fontWeight: 'bold' }}>Clean House sad sad sad sad sad asd asd sad sad sa</Text>
+                    <Text numberOfLines={1} ellipsizeMode={'tail'} style={{ color: brownBlack, fontWeight: 'bold', fontSize: fontScale(13) }}>Clean House sad sad sad sad sad asd asd sad sad sa</Text>
                     <Text numberOfLines={2} ellipsizeMode={'tail'} style={{ fontSize: fontScale(11) }}>Vim company sad asd sad  jshgad ashdg shadg sadgs agd jsagds gds gdsdg sd gsad gsadg sdg shagd shagdgas dgs hjags hdgasd gsa dgsaj asd sad sad adssadas asd sad asd sa</Text>
                 </View>
                 <TouchableOpacity style={{ alignSelf: 'flex-end', paddingBottom: verticalScale(4) }} onPress={() => navigate('JobSreen')}>

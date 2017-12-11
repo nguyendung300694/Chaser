@@ -21,5 +21,26 @@ export default StyleSheet.create({
     },
     headerNav: {
         backgroundColor: blue5
-    }
+    },
+    titleText: {
+        fontSize: fontScale(16)
+    },
+    baseText: {
+        fontSize: fontScale(13)
+    },
+    smallText: {
+        fontSize: fontScale(11)
+    },
+    titleBoldText: {
+        fontSize: fontScale(16),
+        fontWeight: 'bold'
+    },
+    baseBoldText: {
+        fontSize: fontScale(13),
+        fontWeight: 'bold'
+    },
+    smallBoldText: {
+        fontSize: fontScale(11),
+        fontWeight: 'bold'
+    },
 });

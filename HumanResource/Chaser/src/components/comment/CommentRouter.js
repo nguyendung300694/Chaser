@@ -1,8 +1,8 @@
 
 import { StackNavigator } from 'react-navigation';
 
-import Comment from '../comment/Comment';
-import Reply from '../reply/Reply';
+import Comment from './Comment';
+import Reply from './Reply';
 
 const CommentStack = StackNavigator({
     Comment: {

@@ -13,5 +13,10 @@ export default {
     brownGray: '#766470',
     brownPurple: '#675561',
     brownLightGray: '#866E7E',
-    pink2: '#CB9396'
+    pink2: '#CB9396',
+    yellow2: '#FFD700',
+    orange2: '#f0ad4e',
+    green3: '#009688',
+    blue3: '#00bcd4',
+    blue7: '#3f51b5'
 };

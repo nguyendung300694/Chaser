@@ -23,6 +23,9 @@ class Menu extends Component {
                 <TouchableOpacity onPress={() => this.click()} style={{ alignSelf: 'center' }}>
                     <Text style={{ textAlign: 'center' }}>Change Language</Text>
                 </TouchableOpacity>
+                <TouchableOpacity onPress={() => navigate('ProfileScreen')} style={{ alignSelf: 'center' }}>
+                    <Text style={{}}>Profile</Text>
+                </TouchableOpacity>
             </View >
         );
     }
